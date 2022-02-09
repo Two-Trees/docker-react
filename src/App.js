@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react' 
+import './App.css'
+import { Container, Row } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function App(){
+        
+    return (
+        <Container style={{marginTop: '35px'}}>
+            <Row className="justify-content-md-center" style={{opacity:'70%'}}>
+                <div id="block" className="block center" >
+                    <div href= {"https://www.teachtolearn.life"}>
+                        <h1>Learn React-Docker</h1>
+                        <h3>www.cultureconnect.life</h3>
+                    </div>
+                </div>
+            </Row>
+        </Container> 
+        );  
+    } 
 
-export default App;
+export default App; 
