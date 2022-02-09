@@ -1,0 +1,10 @@
+language: generic 
+sudo: required
+services: 
+  - docker
+
+before install: 
+  - docker build -t tw0tr33s/docker-react -f Dockerfile.dev . 
+
+script: 
+  - docker run -e CI=true tw0tr33s/docker-react npm run test
