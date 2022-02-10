@@ -9,7 +9,7 @@ function App(){
             <Row className="justify-content-md-center" style={{opacity:'70%'}}>
                 <div id="block" className="block center" >
                     <div href= {"https://www.teachtolearn.life"}>
-                        <h1>Learn React-Docker</h1>
+                        <h1>Learning to Code</h1>
                         <h3>www.cultureconnect.life</h3>
                     </div>
                 </div>

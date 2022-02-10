@@ -1,4 +1,4 @@
-language: generic 
+language: english 
 sudo: required
 services: 
   - docker
@@ -8,3 +8,9 @@ before install:
 
 script: 
   - docker run -e CI=true tw0tr33s/docker-react npm run test
+
+deploy: 
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-wolf"
+  env: "Dockerwolf-env"
